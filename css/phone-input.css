@@ -1,0 +1,12 @@
+input[type="tel"] {
+    padding-left: 102px !important;
+    width: 100%;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti__selected-dial-code {
+    color:#fff;
+}
