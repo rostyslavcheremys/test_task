@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+}
+
+.logo__img {
+    width: 50px;
+}
+
+.logo__text {
+    font-size: 50px;
+    color: #4d4d50;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 80px !important;
+    }
+
+    .logo__img {
+        width: 40px;
+    }
+
+    .logo__text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 70px !important;
+    }
+
+    .logo__img {
+        width: 30px;
+    }
+
+    .logo__text {
+        font-size: 30px;
+    }
+}

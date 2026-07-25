@@ -1,0 +1,70 @@
+.button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 25px 45px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+    color: #1e1e1e;
+    font: 600 37px "TT Firs Neue", serif;
+    transition: color .3s;
+}
+
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transition: opacity .3s;
+}
+.button::before {
+    background: linear-gradient(143deg, #B6FF6F 0%, #BEED8F 100%);
+}
+
+.button::after {
+    background: #333;
+    opacity: 0;
+}
+
+.button:hover::before,
+.button:active::before {
+    opacity: 0;
+}
+
+.button:hover::after,
+.button:active::after {
+    opacity: 1;
+}
+
+.button:hover span,
+.button:active span {
+    color: #BEED8F;
+}
+
+@media (max-width: 1200px) {
+    .button {
+        padding: 20px 30px;
+        border-radius: 25px;
+    }
+
+    .button span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 15px 20px;
+        border-radius: 20px;
+    }
+
+    .button span {
+        font-size: 25px;
+    }
+}
