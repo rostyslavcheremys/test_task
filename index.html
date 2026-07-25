@@ -1,573 +1,552 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0," name="viewport" />
-
-    <link href="css/nunito-fonts.css" rel="stylesheet" />
-    <link href="css/fonts.css" rel="stylesheet" />
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/adaptive.css" rel="stylesheet" />
-
-    <link href="images/icons/newikonflex1.png" rel="icon" sizes="32x32" type="image/png" />
-    <link href="images/icons/newikonflex1.png" rel="icon" sizes="16x16" type="image/png" />
-
-    <link href="css/phone-input.css" rel="stylesheet" />
-    <link href="css/form-loader.css" rel="stylesheet" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.12/build/css/intlTelInput.css"
-    />
-
-    <link href="css/popup_style.css" rel="stylesheet" />
-    <link href="css/form-animations.css" rel="stylesheet" />
-
-    <link href="css/topblock.css" rel="stylesheet" />
-    <link href="css/reg-form.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0," name="viewport"/>
 
     <title>FinixesPro</title>
-  </head>
 
-  <body>
+    <link href="css/fonts.css" rel="stylesheet"/>
+    <link href="css/nunito-fonts.css" rel="stylesheet"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <link href="css/advantages.css" rel="stylesheet"/>
+    <link href="css/button.css" rel="stylesheet"/>
+    <link href="css/connect.css" rel="stylesheet"/>
+    <link href="css/crypto-exchanges.css" rel="stylesheet"/>
+    <link href="css/description.css" rel="stylesheet"/>
+    <link href="css/footer.css" rel="stylesheet"/>
+    <link href="css/header.css" rel="stylesheet"/>
+    <link href="css/hero.css" rel="stylesheet"/>
+
+    <link href="images/icons/newikonflex.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="images/icons/newikonflex.png" rel="icon" sizes="16x16" type="image/png"/>
+</head>
+<body>
     <header class="header">
-      <div class="container-fluid">
-        <a class="logo" href="#leadform1">
-          <img alt="" class="logo__img" src="images/icons/newikonflex1.png" />
-          <span class="logo__text">FinixesPro</span>
+        <a class="logo" href="#registration-form">
+            <img class="logo__img" src="images/icons/newikonflex.png" alt="" />
+
+            <span class="logo__text">FinixesPro</span>
         </a>
-      </div>
     </header>
+
     <main>
-      <section id="leadform1" class="hero">
-        <div class="hero__wrapper">
-          <div class="hero__big-col">
-            <h1 class="hero__header">
-              <span class="hero__header-decor"></span> VERDIENST <br />
-              <b>VON&nbsp;500&nbsp;€ <br />BIS 1.500&nbsp;€</b><br />PRO TAG<br />
-              <span class="small_h1">
-                DANK DER HANDELSPLATTFORM <br /><br />
-                ANMELDUNG IN DEUTSCHLAND GEÖFFNET
-              </span>
-            </h1>
-          </div>
-          <div class="hero__col" id="form">
-            <div id="reg-form">
-              <div class="rf-container">
-                <div class="rf-container__inner">
-                  <form action="" class="rf-form js-rf-form leadform" method="post">
-                    <div class="form-preloader hidden">
-                      <svg width="50" height="50" class="spinner" viewBox="0 0 50 50">
-                        <circle
-                          class="path"
-                          cx="25"
-                          cy="25"
-                          r="20"
-                          fill="none"
-                          stroke-width="5"
-                        ></circle>
-                      </svg>
-                    </div>
+        <section class="hero" id="registration-form">
+            <div class="hero__wrapper">
+                <div class="hero__content">
+                    <div class="hero__title">
+                        <h1 class="hero__title">
+                            <span class="hero__title-text">VERDIENST</span>
 
-                    <input type="hidden" name="source" value="<?= $source ?>" />
-                    <input type="hidden" name="country" value="<?= $country ?>" />
-                    <input type="hidden" name="language" value="<?= $language ?>" />
-                    <input type="hidden" name="phone_country" value="<?= $phone_country ?>" />
-                    <input type="hidden" name="is_autologin" value="<?= $is_autologin ?>" />
-                    <input type="hidden" name="domain" value="<?= $domain ?>" />
-                    <input type="hidden" name="only_countries" value="<?= $only_countries ?>" />
-                    <input type="hidden" name="pfb" value="<?= $pfb ?>" />
-                    <input type="hidden" name="affid" value="<?= $affid ?>" />
-                    <input type="hidden" name="utm_source" value="<?= $utm_source ?>" />
-                    <input type="hidden" name="utm_campaign" value="<?= $utm_campaign ?>" />
-                    <input type="hidden" name="utm_medium" value="<?= $utm_medium ?>" />
-                    <input type="hidden" name="utm_term" value="<?= $utm_term ?>" />
-                    <input type="hidden" name="utm_content" value="<?= $utm_content ?>" />
-                    <input type="hidden" name="click_id" value="{subid}" />
-                    <input type="hidden" name="description" />
+                            <span class="hero__title-price">
+                                <span>VON 500 €</span>
+                                <span>BIS 1.500 €</span>
+                            </span>
 
-                    <span class="registration-timer" id="registrationTimer"> 05:00 </span>
+                            <span class="hero__title-text">PRO TAG</span>
+                        </h1>
 
-                    <div class="rf-form__header"></div>
-                    <div class="rf-form__content">
-                      <div class="rf-form-field">
-                        <input
-                          class="rf-form-input"
-                          name="fname"
-                          placeholder="Vorname"
-                          required=""
-                          type="text"
-                        />
-                      </div>
-                      <div class="rf-form-field">
-                        <input
-                          class="rf-form-input"
-                          name="lname"
-                          placeholder="Nachname"
-                          required=""
-                          type="text"
-                        />
-                      </div>
-                      <div class="rf-form-field">
-                        <input
-                          class="rf-form-input"
-                          name="email"
-                          placeholder="E-mail"
-                          required=""
-                          type="email"
-                        />
-                      </div>
-                      <div class="rf-form-field">
-                        <input class="rf-form-input" name="fullphone" required="" type="tel" />
-
-                        <span class="error-msg hide"></span>
-                      </div>
-                      <button class="rf-form-button submit" type="submit">
-                        Jetzt registrieren
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <div class="popup__bg" hidden="true" id="reg_popup">
-                  <div class="popup">
-                    <div class="popup__info-block">
-                      <h1 class="popup__title">registration complete!</h1>
-                      <div class="popup__info">
-                        <img
-                          alt="call"
-                          class="popup__call-icon"
-                          src="images/icons/call_symbol.webp"
-                        />
-                        <p class="popup__call-text">
-                          You will receive a
-                          <span class="popup__call-text_highlight">call from us</span>
-                          on your number in 30 minutes
+                        <p class="hero__title-subtitle">
+                            <span>DANK DER HANDELSPLATTFORM</span>
+                            <span>ANMELDUNG IN DEUTSCHLAND GEÖFFNET</span>
                         </p>
-                      </div>
-                      <h2 class="popup__subtitle">Please, follow these steps:</h2>
-                      <ul class="popup__instruction">
-                        <li class="popup__instruction-element">Turn on your ring volume</li>
-                        <li class="popup__instruction-element">Keep your phone within reach</li>
-                        <li class="popup__instruction-element">Click the button below</li>
-                      </ul>
-                      <div class="popup__button">
-                        <a class="popup__button-text" href="#leadform1" id="popup__button-url"
-                          >click here to proceed</a
+
+                        <div class="hero__timer" id="registrationTimer">
+                            05:00
+                        </div>
+                    </div>
+
+                    <form class="hero__form" method="post">
+                        <div class="hero__form-content">
+                            <div class="hero__field">
+                                <label class="hero__label">
+                                    <input class="hero__input" type="text" placeholder="Vorname" required>
+                                </label>
+                            </div>
+
+                            <div class="hero__field">
+                                <label class="hero__label">
+                                    <input class="hero__input" type="text" placeholder="Nachname" required>
+                                </label>
+                            </div>
+
+                            <div class="hero__field">
+                                <label class="hero__label">
+                                    <input class="hero__input" type="email" placeholder="E-mail" required>
+                                </label>
+                            </div>
+
+                            <div class="hero__field">
+                                <label class="hero__label">
+                                    <input class="hero__input" type="tel" placeholder="+49 123 456 7890" required>
+                                </label>
+                            </div>
+
+                            <button class="hero__button" type="submit">Jetzt registrieren</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="hero__comments">
+                    <div class="hero__comment hero__comment--hopp">
+                        <div class="hero__comment-spacer"></div>
+
+                        <div class="hero__comment-content">
+                            <div class="hero__comment-header">
+                                <span class="hero__comment-title">Dietmar Hopp</span>
+                                <span class="hero__comment-subtitle">Milliardär. Mitbegründer der SAP SE</span>
+                                <hr class="hero__comment-divider">
+                            </div>
+
+                            <p class="hero__comment-text">
+                                „Ich glaube, dass dies eines der ehrlichsten und fortschrittlichsten Investitionsprojekte ist.
+                                Nachdem ich die Technologie studiert und getestet hatte, war ich überrascht.
+                                Drei Wochen nachdem ich mich mit dem System vertraut gemacht hatte, investierte ich 1,3 Millionen.
+                                Heute beträgt mein Wachstum 85,47 %", sagte er in einem Interview mit.“
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero__comment hero__comment--weidel">
+                        <div class="hero__comment-spacer"></div>
+
+                        <div class="hero__comment-content">
+                            <div class="hero__comment-header">
+                                <span class="hero__comment-title">Alice Weidel</span>
+                                <span class="hero__comment-subtitle">Deutsche Politikerin und Beraterin</span>
+                                <hr class="hero__comment-divider">
+                            </div>
+
+                            <p class="hero__comment-text">
+                                „Ich nutze diese Plattform nun schon seit mehreren Jahren.
+                                Ich ermutige jeden, sich heute zu registrieren, damit es morgen nicht zu spät ist.
+                                Ich glaube, dass jeder in Deutschland davon profitieren wird.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="description__wrapper">
+                <div class="description__intro">
+                    <h2 class="description__title">
+                        Die meisten unerfahrenen Anfänger verdienen auf Anhieb Geld, und mit unserer Hilfe
+                        können auch Sie es schaffen
+                    </h2>
+
+                    <p class="description__subtitle">
+                        FinixesPro ist so programmiert, dass er nur dann handelt, wenn er weiß, dass er einen
+                        sofortigen Gewinn erzielen wird
+                    </p>
+                </div>
+
+                <div class="description__cta">
+                    <h3 class="description__cta-title">
+                        Melden Sie sich noch heute an und erhalten Sie sofortigen Zugang.
+                        Dieses revolutionäre Programm
+                    </h3>
+
+                    <a class="description__button button" href="#registration-form">
+                        <span>Sofortiger Verdienst</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="description__leaders">
+                <ul class="description__leaders-list">
+                    <li class="description__leader">
+                        <div class="description__leader-place">
+                            <div class="description__leader-num">1.</div>
+
+                            <div class="description__leader-avatar">
+                                <img src="images/screenshots/11.jpg" alt="Sophie Keller" />
+                            </div>
+
+                            <div class="description__leader-name">Sophie Keller</div>
+                        </div>
+
+                        <div class="description__leader-progress">
+                            <div class="description__leader-bar" style="width: 60%;"></div>
+                            <div class="description__leader-profit">€102 881</div>
+                        </div>
+                    </li>
+
+                    <li class="description__leader">
+                        <div class="description__leader-place">
+                            <div class="description__leader-num">2.</div>
+
+                            <div class="description__leader-avatar">
+                                <img src="images/screenshots/12.jpg" alt="Johann Bauer" />
+                            </div>
+
+                            <div class="description__leader-name">Johann Bauer</div>
+                        </div>
+
+                        <div class="description__leader-progress">
+                            <div class="description__leader-bar" style="width: 57%;"></div>
+                            <div class="description__leader-profit">€87 300</div>
+                        </div>
+                    </li>
+
+                    <li class="description__leader">
+                        <div class="description__leader-place">
+                            <div class="description__leader-num">3.</div>
+
+                            <div class="description__leader-avatar">
+                                <img src="images/screenshots/13.jpg" alt="Lena Braun" />
+                            </div>
+
+                            <div class="description__leader-name">Lena Braun</div>
+                        </div>
+
+                        <div class="description__leader-progress">
+                            <div class="description__leader-bar" style="width: 51%;"></div>
+                            <div class="description__leader-profit">€74 937</div>
+                        </div>
+                    </li>
+
+                    <li class="description__leader">
+                        <div class="description__leader-place">
+                            <div class="description__leader-num">4.</div>
+
+                            <div class="description__leader-avatar">
+                                <img src="images/screenshots/14.jpg" alt="Lukas Hoffmann" />
+                            </div>
+
+                            <div class="description__leader-name">Lukas Hoffmann</div>
+                        </div>
+
+                        <div class="description__leader-progress">
+                            <div class="description__leader-bar" style="width: 50%;"></div>
+                            <div class="description__leader-profit">€71 691</div>
+                        </div>
+                    </li>
+
+                    <li class="description__leader">
+                        <div class="description__leader-place">
+                            <div class="description__leader-num">5.</div>
+
+                            <div class="description__leader-avatar">
+                                <img src="images/screenshots/15.jpg" alt="Felix Weber" />
+                            </div>
+
+                            <div class="description__leader-name">Felix Weber</div>
+                        </div>
+
+                        <div class="description__leader-progress">
+                            <div class="description__leader-bar" style="width: 50%;"></div>
+                            <div class="description__leader-profit">€65 897</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="description__calculator">
+                    <div class="description__calculator-controls">
+                        <div class="description__calculator-labels">
+                            <span>€250</span>
+                            <span>€500</span>
+                            <span>€750</span>
+                            <span>€1000</span>
+                            <span>€1250</span>
+                        </div>
+
+                        <input
+                                class="description__calculator-range"
+                                id="slider"
+                                type="range"
+                                min="240"
+                                max="1260"
+                                step="1"
+                                value="250"
                         >
-                      </div>
+
+                        <div class="description__calculator-value" id="currentValue">
+                            €250
+                        </div>
                     </div>
-                    <div class="popup__info-decor">
-                      <div class="popup__decoration">
-                        <img alt="success" class="popup__pic" src="images/icons/checkmark.webp" />
-                      </div>
+
+                    <div class="description__calculator-results">
+                        <div class="description__calculator-row">
+                            <span class="description__calculator-text">
+                                Gewinn nach 1 Tag
+                            </span>
+
+                            <span class="description__calculator-profit" id="resultDay">
+                                €750
+                            </span>
+                        </div>
+
+                        <div class="description__calculator-row">
+                            <span class="description__calculator-text">
+                                Gewinn nach 30 Tagen
+                            </span>
+
+                            <span class="description__calculator-profit" id="resultMonth">
+                                €22.500
+                            </span>
+                        </div>
+
+                        <div class="description__calculator-row">
+                            <span class="description__calculator-text">
+                                Gewinn nach 180 Tagen
+                            </span>
+
+                            <span class="description__calculator-profit" id="resultHalfYear">
+                                €135.000
+                            </span>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="hero__comment-wrapper">
-            <div
-              class="hero__comment-block"
-              style="background-image: url(&quot;images/celebs/celeb-1.jpeg&quot;)"
-            >
-              <div class="white-space"></div>
-              <div class="hero__comment-text-block">
-                <div class="hero__comment-title-block">
-                  <span class="hero__comment-title">Dietmar Hopp</span>
-                  <span class="hero__comment-subtitle">Milliardär. Mitbegründer der SAP SE</span>
-                  <hr />
-                </div>
-                <p class="hero__comment-text">
-                  „Ich glaube, dass dies eines der ehrlichsten und fortschrittlichsten
-                  Investitionsprojekte ist. Nachdem ich die Technologie studiert und getestet hatte,
-                  war ich überrascht. Drei Wochen nachdem ich mich mit dem System vertraut gemacht
-                  hatte, investierte ich 1,3 Millionen. Heute beträgt mein Wachstum 85,47 %", sagte
-                  er in einem Interview mit.“
-                </p>
-              </div>
-            </div>
-            <div
-              class="hero__comment-block"
-              style="background-image: url(&quot;images/celebs/celeb-2.png&quot;)"
-            >
-              <div class="white-space"></div>
-              <div class="hero__comment-text-block">
-                <div class="hero__comment-title-block">
-                  <span class="hero__comment-title">Alice Weidel</span>
-                  <span class="hero__comment-subtitle">Deutsche Politikerin und Beraterin</span>
-                  <hr />
-                </div>
-                <p class="hero__comment-text">
-                  „Ich nutze diese Plattform nun schon seit mehreren Jahren. Ich ermutige jeden,
-                  sich heute zu registrieren, damit es morgen nicht zu spät ist. Ich glaube, dass
-                  jeder in Deutschland davon profitieren wird.“
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="description">
-        <div class="wrapper">
-          <div class="description__title-wrapper">
-            <h2 class="description__title">
-              Die meisten unerfahrenen Anfänger verdienen auf Anhieb Geld, und mit unserer Hilfe
-              können auch Sie es schaffen
-            </h2>
-            <p class="description__subtitle">
-              FinixesPro ist so programmiert, dass er nur dann handelt, wenn er weiß, dass er einen
-              sofortigen Gewinn erzielen wird
-            </p>
-            <h3 class="description__title reg-title">
-              Melden Sie sich noch heute an und erhalten Sie sofortigen Zugang. Dieses revolutionäre
-              Programm
-            </h3>
-            <div class="btn-wrapper">
-              <a class="btn" href="#leadform1">
-                <span>Sofortiger Verdienst</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="top__list-wrapper">
-          <ul class="top__list" style="margin: 29px 0 !important; padding: 0 !important">
-            <li class="item" id="top-item-1">
-              <div class="place bigbanana-72" data-info="bigbanana-72">
-                <div class="place__num bigbanana-73" data-info="bigbanana-73">1.</div>
-                <div class="place__avatar bigbanana-74" data-info="bigbanana-74">
-                  <img src="images/screenshots/11.jpg" alt="" width="100%" />
-                </div>
-                <div class="place__name bigbanana-75" data-info="bigbanana-75">Sophie Keller</div>
-              </div>
-              <div class="progress bigbanana-76" data-info="bigbanana-76">
-                <div
-                  class="progress__bar bigbanana-77"
-                  data-progress="60"
-                  style="width: 60%"
-                  data-info="bigbanana-77"
-                ></div>
+        <section class="advantages">
+            <div class="advantages__wrapper">
+                <div class="advantages__cards">
+                    <article class="advantages__card">
+                        <div class="advantages__icon">
+                            <img src="images/screenshots/table.webp" alt="Einfachheit und Benutzerfreundlichkeit">
+                        </div>
 
-                <div class="progress__info bigbanana-78" data-info="bigbanana-78">
-                  <random>€102 881</random>
-                </div>
-              </div>
-            </li>
-            <li class="item" id="top-item-2">
-              <div class="place bigbanana-79" data-info="bigbanana-79">
-                <div class="place__num bigbanana-80" data-info="bigbanana-80">2.</div>
-                <div class="place__avatar bigbanana-81" data-info="bigbanana-81">
-                  <img src="images/screenshots/12.jpg" alt="" width="100%" />
-                </div>
-                <div class="place__name bigbanana-82" data-info="bigbanana-82">Johann Bauer</div>
-              </div>
-              <div class="progress bigbanana-83" data-info="bigbanana-83">
-                <div
-                  class="progress__bar bigbanana-84"
-                  data-progress="57"
-                  style="width: 57%"
-                  data-info="bigbanana-84"
-                ></div>
-                <div class="progress__info bigbanana-85" data-info="bigbanana-85">
-                  <random>€87 300</random>
-                </div>
-              </div>
-            </li>
-            <li class="item" id="top-item-3">
-              <div class="place bigbanana-86" data-info="bigbanana-86">
-                <div class="place__num bigbanana-87" data-info="bigbanana-87">3.</div>
-                <div class="place__avatar bigbanana-88" data-info="bigbanana-88">
-                  <img src="images/screenshots/13.jpg" alt="" width="100%" />
-                </div>
-                <div class="place__name bigbanana-89" data-info="bigbanana-89">Lena Braun</div>
-              </div>
-              <div class="progress bigbanana-90" data-info="bigbanana-90">
-                <div
-                  class="progress__bar bigbanana-91"
-                  data-progress="51"
-                  style="width: 51%"
-                  data-info="bigbanana-91"
-                ></div>
-                <div class="progress__info bigbanana-92" data-info="bigbanana-92">
-                  <random>€74 937</random>
-                </div>
-              </div>
-            </li>
-            <li class="item" id="top-item-4">
-              <div class="place bigbanana-93" data-info="bigbanana-93">
-                <div class="place__num bigbanana-94" data-info="bigbanana-94">4.</div>
-                <div class="place__avatar bigbanana-95" data-info="bigbanana-95">
-                  <img src="images/screenshots/14.jpg" alt="" width="100%" />
-                </div>
-                <div class="place__name bigbanana-96" data-info="bigbanana-96">Lukas Hoffmann</div>
-              </div>
-              <div class="progress bigbanana-97" data-info="bigbanana-97">
-                <div
-                  class="progress__bar bigbanana-98"
-                  data-progress="50"
-                  style="width: 50%"
-                  data-info="bigbanana-98"
-                ></div>
-                <div class="progress__info bigbanana-99" data-info="bigbanana-99">
-                  <random>€71 691</random>
-                </div>
-              </div>
-            </li>
-            <li class="item" id="top-item-5">
-              <div class="place bigbanana-100" data-info="bigbanana-100">
-                <div class="place__num bigbanana-101" data-info="bigbanana-101">5.</div>
-                <div class="place__avatar" data-info="bigbanana-102">
-                  <img src="images/screenshots/15.jpg" alt="" width="100%" />
-                </div>
-                <div class="place__name bigbanana-103" data-info="bigbanana-103">Felix Weber</div>
-              </div>
-              <div class="progress bigbanana-104" data-info="bigbanana-104">
-                <div
-                  class="progress__bar bigbanana-105"
-                  data-progress="50"
-                  style="width: 50%"
-                  data-info="bigbanana-105"
-                ></div>
-                <div class="progress__info bigbanana-106" data-info="bigbanana-106">
-                  <random>€65 897</random>
-                </div>
-              </div>
-            </li>
-          </ul>
+                        <div class="advantages__content">
+                            <h3 class="advantages__card-title">
+                                Einfachheit und Benutzerfreundlichkeit
+                            </h3>
 
-          <div id="calculator" class="bigbanana-142" data-info="bigbanana-142">
-            <div id="slider-container" class="bigbanana-143" data-info="bigbanana-143">
-              <div class="slider-labels bigbanana-144" data-info="bigbanana-144">
-                <span>€260</span>
-                <span>€400</span>
-                <span>€650</span>
-                <span>€1000</span>
-                <span>€1250</span>
-              </div>
-              <input type="range" id="slider" Std="260" max="1250" step="1" value="260" />
-              <div id="current-value" class="bigbanana-145" data-info="bigbanana-145">€260</div>
-              <br />
+                            <p class="advantages__card-text">
+                                FinixesPro lässt sich in nur wenigen Minuten oder Sekunden auf jedem Computer oder
+                                mobilen Gerät installieren. PC, MAC, Android, iOS und mehr.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="advantages__card">
+                        <div class="advantages__icon">
+                            <img src="images/screenshots/graph.webp" alt="Zuverlässiger Betrieb">
+                        </div>
+
+                        <div class="advantages__content">
+                            <h3 class="advantages__card-title">
+                                Zuverlässiger Betrieb
+                            </h3>
+
+                            <p class="advantages__card-text">
+                                Das vollautomatische Programm scannt sofort alle wichtigen Aktienmärkte. Null Risiko,
+                                sofortige Belohnung.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="advantages__card">
+                        <div class="advantages__icon">
+                            <img src="images/icons/lock.webp" alt="Sicherheit und Datenschutz">
+                        </div>
+
+                        <div class="advantages__content">
+                            <h3 class="advantages__card-title">
+                                Sicherheit und Datenschutz
+                            </h3>
+
+                            <p class="advantages__card-text">
+                                Mithilfe der Blockchain-Technologie bieten wir eine Erfolgsquote von 98,9 % für alle
+                                Mitglieder unserer Plattform.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="advantages__button">
+                    <a href="#registration-form" class="button">
+                        <span>Sofortiger Verdienst</span>
+                    </a>
+                </div>
+
+                <div class="advantages__info">
+                    <h2 class="advantages__title">
+                        FinixesPro ist jetzt mit allen wichtigen Kryptowährungsmärkten kompatibel
+                    </h2>
+
+                    <p class="advantages__text">
+                        Das Geheimnis liegt in der Funktionsweise der Aktienmärkte. Der Preis einer Währung steigt
+                        und fällt je nach Angebot und Nachfrage, und Angebot und Nachfrage nach einer Währung
+                        variieren von einem führenden Markt zum anderen. Aus diesem Grund schwankt der Preis ein
+                        und derselben Währung oft stark von Markt zu Markt. FinixesPro lässt sich nahtlos in
+                        Coinbase, Binance, Kraken, Poloniex, Bittrex und viele andere Plattformen integrieren, um
+                        Ihnen einen sofortigen Vorteil zu verschaffen und Ihnen sofortige Gewinne zu ermöglichen.
+                    </p>
+                </div>
             </div>
-            <div class="result bigbanana-146" data-info="bigbanana-146">
-              Gewinn nach 1 Tag: <span id="result">€800</span>
+
+            <div class="advantages__decor advantages__decor--left">
+                <img src="images/decor/left-cloud.webp" alt="">
             </div>
-            <div class="result bigbanana-147" data-info="bigbanana-147">
-              Gewinn nach 30 Tagen: <span id="result30">€27.000</span>
+
+            <div class="advantages__decor advantages__decor--right">
+                <img src="images/decor/right-cloud.webp" alt="">
             </div>
-            <div class="result bigbanana-148" data-info="bigbanana-148">
-              Gewinn nach 180 Tagen: <span id="result180">€160.000</span>
+
+            <div class="advantages__decor advantages__decor--coins">
+                <img src="images/decor/small_coins.webp" alt="">
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages__list">
-          <div class="advantages__card">
-            <div class="advantages__card-wrapper">
-              <div class="advantages__card-icon">
-                <img alt="table-img" src="images/screenshots/table.webp" />
-              </div>
-              <div class="advantages__text-wrapper">
-                <span class="advantages__card-title">Einfachheit und Benutzerfreundlichkeit</span>
-                <p class="advantages__card-text">
-                  FinixesPro lässt sich in nur wenigen Minuten oder Sekunden auf jedem Computer oder
-                  mobilen Gerät installieren. PC, MAC, Android, iOS und mehr.
-                </p>
-              </div>
+        </section>
+
+        <section class="crypto-exchanges">
+            <div class="crypto-exchanges__list">
+                <img class="crypto-exchanges__item" src="images/exchanges/coinbase-icon.svg" alt=""/>
+                <img class="crypto-exchanges__item" src="images/exchanges/kraken-logo.svg" alt=""/>
+                <img class="crypto-exchanges__item" src="images/exchanges/binance-logo.svg" alt=""/>
+                <img class="crypto-exchanges__item" src="images/exchanges/poloniex-logo.svg" alt=""/>
+                <img class="crypto-exchanges__item" src="images/exchanges/bittrex-logo.svg" alt=""/>
             </div>
-          </div>
-          <div class="advantages__card">
-            <div class="advantages__card-wrapper">
-              <div class="advantages__card-icon">
-                <img alt="graph-img" src="images/screenshots/graph.webp" />
-              </div>
-              <div class="advantages__text-wrapper">
-                <span class="advantages__card-title">Zuverlässiger Betrieb</span>
-                <p class="advantages__card-text">
-                  Das vollautomatische Programm scannt sofort alle wichtigen Aktienmärkte. Null
-                  Risiko, sofortige Belohnung.
-                </p>
-              </div>
+        </section>
+
+        <section class="connect">
+            <div class="connect__wrapper">
+                <h2 class="connect__title">
+                    Registrieren Sie Ihre Daten und verschaffen Sie sich einen sofortigen Vorteil auf dem
+                    Kryptowährungsmarkt
+                </h2>
+
+                <div class="connect__comments">
+                    <article class="connect__comment">
+                        <div class="connect__avatar">
+                            <img src="images/comments/comment-img-1.webp" alt="Joana Löwen">
+                        </div>
+
+                        <div class="connect__content">
+                            <div class="connect__header">
+                                <h3 class="connect__name">Joana Löwen</h3>
+
+                                <div class="connect__rating">
+                                    <img src="images/icons/stars.webp" alt="5 stars">
+                                </div>
+                            </div>
+
+                            <p class="connect__text">
+                                Ich hatte vorher noch nie gehandelt, aber mit FinixesPro sah es so einfach aus.
+                                Ich hätte nie gedacht, dass ich so etwas sagen würde, zumal die Welt der
+                                Kryptowährungen so kompliziert sein kann, aber jetzt ist es so einfach,
+                                Beträge in unvorstellbarer Höhe zu bekommen!
+                            </p>
+
+                            <div class="connect__actions">
+                                <button class="connect__action connect__action--like">Gefällt mir</button>
+                                <button class="connect__action connect__action--comment">Kommentar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="connect__comment">
+                        <div class="connect__avatar">
+                            <img src="images/comments/comment-img-2.webp" alt="Gabi Kaiser">
+                        </div>
+
+                        <div class="connect__content">
+                            <div class="connect__header">
+                                <h3 class="connect__name">Gabi Kaiser</h3>
+
+                                <div class="connect__rating">
+                                    <img src="images/icons/stars.webp" alt="5 stars">
+                                </div>
+                            </div>
+
+                            <p class="connect__text">
+                                Das ist genau das, worauf ich schon so lange gewartet habe!
+                                Ihre pädagogische Unterstützung und Ihr großartiges Verdienstsystem
+                                haben mich für das Leben gestärkt! Ich danke Ihnen so sehr.
+                            </p>
+
+                            <div class="connect__actions">
+                                <button class="connect__action connect__action--like">Gefällt mir</button>
+                                <button class="connect__action connect__action--comment">Kommentar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="connect__comment">
+                        <div class="connect__avatar">
+                            <img src="images/comments/comment-img-3.webp" alt="Christian Wittmann">
+                        </div>
+
+                        <div class="connect__content">
+                            <div class="connect__header">
+                                <h3 class="connect__name">Christian Wittmann</h3>
+
+                                <div class="connect__rating">
+                                    <img src="images/icons/stars.webp" alt="5 stars">
+                                </div>
+                            </div>
+
+                            <p class="connect__text">
+                                Am ersten Tag habe ich 720 € eingenommen.
+                                Ich kann also wirklich sagen, dass ich endlich etwas gefunden habe,
+                                das hervorragende Ergebnisse liefert!
+                            </p>
+
+                            <div class="connect__actions">
+                                <button class="connect__action connect__action--like">Gefällt mir</button>
+                                <button class="connect__action connect__action--comment">Kommentar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="connect__title">
+                    Registrieren Sie Ihre Daten und verschaffen Sie sich einen sofortigen Vorteil auf dem
+                    Kryptowährungsmarkt
+                </h2>
+
+                <div class="connect__button">
+                    <a href="#registration-form" class="button">
+                        <span>Jetzt starten</span>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="advantages__card">
-            <div class="advantages__card-wrapper">
-              <div class="advantages__card-icon">
-                <img alt="lock-img" src="images/icons/lock.webp" />
-              </div>
-              <div class="advantages__text-wrapper">
-                <span class="advantages__card-title">Sicherheit und Datenschutz</span>
-                <p class="advantages__card-text">
-                  Mit Hilfe der Blockchain-Technologie bieten wir eine Erfolgsquote von 98,9% für
-                  alle Mitglieder unserer Plattform.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-wrapper">
-          <a class="btn" href="#leadform1">
-            <span>Sofortiger Verdienst</span>
-          </a>
-        </div>
-        <div class="advantages__text-block">
-          <h2 class="advantages__title">
-            FinixesPro ist jetzt mit allen wichtigen Kryptowährungsmärkten kompatibel
-          </h2>
-          <p class="advantages__text">
-            Das Geheimnis liegt in der Funktionsweise der Aktienmärkte. Der Preis einer Währung
-            steigt und fällt je nach Angebot und Nachfrage, und Angebot und Nachfrage nach einer
-            Währung variieren von einem führenden Markt zum anderen. Aus diesem Grund schwankt der
-            Preis ein und derselben Währung oft stark von Markt zu Markt. FinixesPro lässt sich
-            nahtlos in Coinbase, Binance, Kraken, Poloniex, Bittrex und viele andere Plattformen
-            integrieren, um Ihnen einen sofortigen Vorteil zu verschaffen und Ihnen sofortige
-            Gewinne zu ermöglichen.
-          </p>
-          <p class="advantages__text"></p>
-        </div>
-        <div class="advantages__decor-left">
-          <img alt="" src="images/decor/left-cloud.webp" />
-        </div>
-        <div class="advantages__decor-right" data-aos="fade-left">
-          <img alt="" src="images/decor/right-cloud.webp" />
-        </div>
-        <div class="advantages__decor-coins">
-          <img alt="" src="images/decor/small_coins.webp" />
-        </div>
-      </section>
-      <section class="crypto-exchanges">
-        <div class="crypto-exchanges__list">
-          <img alt="" class="crypto-exchanges__item" src="images/exchanges/coinbase-icon.svg" />
-          <img alt="" class="crypto-exchanges__item" src="images/exchanges/kraken-logo.svg" />
-          <img alt="" class="crypto-exchanges__item" src="images/exchanges/binance-logo.svg" />
-          <img alt="" class="crypto-exchanges__item" src="images/exchanges/poloniex-logo.svg" />
-          <img alt="" class="crypto-exchanges__item" src="images/exchanges/bittrex-logo.svg" />
-        </div>
-      </section>
-      <section class="connect">
-        <h2 class="connect-title">
-          Registrieren Sie Ihre Daten und verschaffen Sie sich einen sofortigen Vorteil auf dem
-          Kryptowährungsmarkt
-        </h2>
-        <div class="connect__comments-list">
-          <div class="connect__comment-block">
-            <div class="connect__comment-avatar">
-              <img alt="" src="images/comments/comment-img-1.webp" />
-            </div>
-            <div class="connect__comment-title">
-              Joana Löwen
-              <span class="connect__comment-raiting"
-                ><img alt="" src="images/icons/stars.webp"
-              /></span>
-            </div>
-            <div class="connect__comment-info">
-              <p class="connect__comment-text">
-                Ich hatte vorher noch nie gehandelt, aber mit FinixesPro sah es so einfach aus. Ich
-                hätte nie gedacht, dass ich so etwas sagen würde, zumal die Welt der Kryptowährungen
-                so kompliziert sein kann, aber jetzt ist es so einfach, Beträge in unvorstellbarer
-                Höhe zu bekommen!
-              </p>
-              <div class="connect__comment-btns">
-                <div class="connect__comment-like">Gefällt mir</div>
-                <div class="connect__comment">Kommentar</div>
-              </div>
-            </div>
-          </div>
-          <div class="connect__comment-block">
-            <div class="connect__comment-avatar">
-              <img alt="" src="images/comments/comment-img-2.webp" />
-            </div>
-            <div class="connect__comment-title">
-              Gabi Kaiser
-              <span class="connect__comment-raiting"
-                ><img alt="" src="images/icons/stars.webp"
-              /></span>
-            </div>
-            <div class="connect__comment-info">
-              <p class="connect__comment-text">
-                Das ist genau das, worauf ich schon so lange gewartet habe! Ihre pädagogische
-                Unterstützung und Ihr großartiges Verdienstsystem haben mich für das Leben gestärkt!
-                Ich danke Ihnen so sehr
-              </p>
-              <div class="connect__comment-btns">
-                <div class="connect__comment-like">Gefällt mir</div>
-                <div class="connect__comment">Kommentar</div>
-              </div>
-            </div>
-          </div>
-          <div class="connect__comment-block">
-            <div class="connect__comment-avatar">
-              <img alt="" src="images/comments/comment-img-3.webp" />
-            </div>
-            <div class="connect__comment-title">
-              Christian Wittmann
-              <span class="connect__comment-raiting"
-                ><img alt="" src="images/icons/stars.webp"
-              /></span>
-            </div>
-            <div class="connect__comment-info">
-              <p class="connect__comment-text">
-                Am ersten Tag habe ich 720 € eingenommen. Ich kann also wirklich sagen, dass ich
-                endlich etwas gefunden habe, das hervorragende Ergebnisse liefert!
-              </p>
-              <div class="connect__comment-btns">
-                <div class="connect__comment-like">Gefällt mir</div>
-                <div class="connect__comment">Kommentar</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="connect-title">
-          Registrieren Sie Ihre Daten und verschaffen Sie sich einen sofortigen Vorteil auf dem
-          Kryptowährungsmarkt
-        </h2>
-        <div class="btn-wrapper">
-          <a class="btn" href="#leadform1">
-            <span>Jetzt starten</span>
-          </a>
-        </div>
-      </section>
+        </section>
     </main>
+
     <footer class="footer">
-      <div class="footer__upper-block">
-        <div class="container">
-          <div class="footer__wrapper">
-            <div class="footer__link-wrapper">
-              <a class="footer__link" href="#leadform1">Datenschutzbestimmungen</a>
-              <a class="footer__link" href="#leadform1">Bedingungen</a>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__content">
+                    <nav class="footer__nav">
+                        <a href="#registration-form" class="footer__link">
+                            Datenschutzbestimmungen
+                        </a>
+
+                        <a href="#registration-form" class="footer__link">
+                            Bedingungen
+                        </a>
+                    </nav>
+
+                    <a href="#registration-form" class="logo footer__logo">
+                        <img class="logo__img" src="images/icons/newikonflex.png" alt="FinixesPro">
+                        <span class="logo__text">FinixesPro</span>
+                    </a>
+
+                    <p class="footer__tagline">
+                        Es ist einfach, wenn man weiß, wie
+                    </p>
+                </div>
             </div>
-            <a class="logo footer__logo" href="#leadform1">
-              <img alt="" class="logo__img" src="images/icons/newikonflex1.png" />
-              <span class="logo__text">FinixesPro</span>
-            </a>
-            <p class="footer__tagline">Es ist einfach, wenn man weiß, wie</p>
-          </div>
         </div>
-      </div>
-      <div class="footer__lover-block">
-        <div class="container">
-          <div class="footer__wrapper">
-            <span class="footer__copyright">© 2024 Alle Rechte vorbehalten - FinixesPro</span>
-          </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">
+                    © 2026 Alle Rechte vorbehalten — FinixesPro
+                </p>
+            </div>
         </div>
-      </div>
     </footer>
-    <script>
-      document.querySelectorAll("[href='#leadform1']").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.getElementById("leadform1").scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.12/build/js/intlTelInput.min.js"></script>
-    <script src="js/timer.js"></script>
-  </body>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/registration-timer.js"></script>
+    <script src="js/calculator-slider.js"></script>
+</body>
 </html>

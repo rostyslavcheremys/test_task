@@ -1,0 +1,381 @@
+.hero {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background: url("/images/decor/coins.webp") -30px -100px, url("/images/decor/pattern.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: tt firs neue, serif;
+    line-height: 1;
+}
+
+.hero__title-text {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.hero__title-price {
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.hero__title-subtitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.hero__timer {
+    display: block;
+    font-size: 70px;
+    font-weight: bold;
+    color: #b6ff6f;
+    margin-top: 30px;
+}
+
+.hero__form {
+    max-width: 485px;
+    width: 100%;
+}
+
+.hero__form-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 485px;
+    gap: 15px;
+}
+
+.hero__field {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: linear-gradient(
+            176deg,
+            rgba(51, 51, 51, 0.4) 0%,
+            rgba(80, 79, 79, 0.4) 100%
+    );
+    backdrop-filter: blur(5px);
+}
+
+.hero__input {
+    width: 100%;
+    padding: 30px 15px;
+    background: transparent;
+    color: #faf8ff;
+    font: 400 22px "Montserrat", sans-serif;
+}
+
+.hero__input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #beed8f;
+    border-radius: 20px;
+}
+
+.hero__input::placeholder {
+    color: #faf8ff;
+}
+
+.hero__button {
+    width: 100%;
+    height: 84px;
+    border-radius: 20px;
+    background: linear-gradient(143deg, #b6ff6f 0%, #beed8f 100%);
+    color: #1e1e1e;
+    text-align: center;
+    font: 600 22px "Montserrat", sans-serif;
+}
+
+.hero__button:hover,
+.hero__button:active {
+    color: #beed8f;
+    background: #333;
+}
+
+.hero__comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.hero__comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    width: 500px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__comment--hopp {
+    background-image: url(/images/celebs/celeb-1.jpeg);
+}
+
+.hero__comment--weidel {
+    background-image: url(/images/celebs/celeb-2.png);
+}
+
+.hero__comment-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 290px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 0 0 50px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hero__comment-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__comment-title {
+    font-size: 35px;
+    font-weight: 700
+}
+
+.hero__comment-divider {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    background: #fff;
+}
+
+@media (max-width: 1200px) {
+    .hero__title-text,
+    .hero__title-price,
+    .hero__timer {
+        font-size: 50px;
+    }
+
+    .hero__title-subtitle {
+        font-size: 30px;
+    }
+
+    .hero__input {
+        padding: 25px 15px;
+    }
+
+    .hero__input,
+    .hero__input::placeholder {
+        font-size: 18px;
+    }
+
+    .hero__button {
+        font-size: 18px;
+        height: 70px;
+    }
+
+    .hero__comment {
+        height: 650px;
+    }
+
+    .hero__comment-content {
+        font-size: 16px;
+    }
+
+    .hero__comment-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 50px;
+        background: url("/images/decor/pattern-mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, 0% -40%
+    }
+
+    .hero__content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__title-text,
+    .hero__title-price,
+    .hero__timer {
+        font-size: 60px;
+    }
+
+    .hero__title-subtitle {
+        font-size: 40px;
+    }
+
+    .hero__input {
+        padding: 30px 15px;
+        font-size: 22px;
+    }
+
+    .hero__input,
+    .hero__input::placeholder {
+        font-size: 22px;
+    }
+
+    .hero__button {
+        height: 85px;
+        font-size: 22px;
+    }
+
+    .hero__comments {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero__comment {
+        border-radius: 30px;
+        width: 481px;
+    }
+
+    .hero__comment-content {
+        font-size: 18px;
+    }
+
+    .hero__comment-title {
+        font-size: 35px;
+    }
+
+    .hero__comment-divider {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 40px;
+    }
+
+    .hero__title-text,
+    .hero__title-price,
+    .hero__timer {
+        font-size: 50px;
+    }
+
+    .hero__title-subtitle {
+        font-size: 30px;
+    }
+
+    .hero__input {
+        padding: 25px 15px;
+    }
+
+    .hero__input,
+    .hero__input::placeholder {
+        font-size: 18px;
+    }
+
+    .hero__button {
+        font-size: 18px;
+        height: 70px;
+    }
+
+    .hero__comment-content {
+        font-size: 18px
+    }
+
+    .hero__comment-title {
+        font-size: 25px
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 50px 30px;
+    }
+
+    .hero__content {
+        gap: 20px;
+    }
+
+    .hero__title-text,
+    .hero__title-price,
+    .hero__timer {
+        font-size: 40px;
+    }
+
+    .hero__title-subtitle {
+        font-size: 20px;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .hero__timer {
+        margin-top: 20px;
+    }
+
+    .hero__input {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .hero__input::placeholder {
+        font-size: 16px;
+    }
+
+    .hero__button {
+        height: 47px;
+        font-size: 16px;
+    }
+
+    .hero__comment {
+        height: 600px;
+        width: 100%;
+    }
+
+    .hero__comment-content {
+        padding: 15px;
+        font-size: 16px;
+        height: 250px;
+    }
+
+    .hero__comment-title {
+        font-size: 22px;
+    }
+
+    .hero__comment-divider {
+        margin: 10px 0;
+    }
+}

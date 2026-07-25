@@ -1,0 +1,56 @@
+.crypto-exchanges {
+    padding: 40px 0;
+    background: white;
+}
+
+.crypto-exchanges__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.crypto-exchanges__item {
+    width: 90px;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .crypto-exchanges {
+        padding: 30px 0;
+    }
+
+    .crypto-exchanges__item {
+        width: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .crypto-exchanges {
+        padding: 20px 0;
+    }
+
+    .crypto-exchanges__list {
+        gap: 40px;
+    }
+
+    .crypto-exchanges__item {
+        width: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .crypto-exchanges__list {
+        gap: 25px;
+    }
+
+    .crypto-exchanges__item {
+        width: 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .crypto-exchanges__item {
+        width: 35px;
+    }
+}
