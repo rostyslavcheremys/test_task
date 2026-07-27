@@ -5,9 +5,9 @@
 
 .crypto-exchanges__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    padding: 0 150px;
 }
 
 .crypto-exchanges__item {
@@ -20,8 +20,12 @@
         padding: 30px 0;
     }
 
+    .crypto-exchanges__list {
+        padding: 0 50px;
+    }
+
     .crypto-exchanges__item {
-        width: 75px;
+        width: 60px;
     }
 }
 
@@ -31,21 +35,21 @@
     }
 
     .crypto-exchanges__list {
-        gap: 40px;
+        padding: 0 40px;
     }
 
     .crypto-exchanges__item {
-        width: 60px;
+        width: 50px;
     }
 }
 
 @media (max-width: 576px) {
     .crypto-exchanges__list {
-        gap: 25px;
+        padding: 0 30px;
     }
 
     .crypto-exchanges__item {
-        width: 45px;
+        width: 40px;
     }
 }
 
