@@ -79,11 +79,11 @@
 }
 
 .connect__action--like::before {
-    background-image: url("/images/icons/like.webp");
+    background-image: url("../images/icons/like.webp");
 }
 
 .connect__action--comment::before {
-    background-image: url("/images/icons/comment.webp");
+    background-image: url("../images/icons/comment.webp");
 }
 
 .connect__button {

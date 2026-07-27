@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     padding: 100px;
-    background: url("../images/decor/coins.webp") -30px -100px, url("/images/decor/pattern.webp");
+    background: url("../images/decor/coins.webp") -30px -100px, url("../images/decor/pattern.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -228,7 +228,10 @@
     .hero {
         padding: 50px;
         background-size: cover;
-        background: url("/images/decor/pattern-mob.webp") no-repeat, no-repeat center, 0 -40%;
+        background: url("../images/decor/pattern-mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, 0% -40%
     }
 
     .hero__content {
