@@ -1,6 +1,6 @@
 .connect {
     padding: 100px;
-    background: url("/images/icons/likes.webp") center/cover no-repeat;
+    background: url("../images/icons/likes.webp") center/cover no-repeat;
 }
 
 .connect__wrapper {

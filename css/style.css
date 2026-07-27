@@ -5,10 +5,7 @@ html {
 
 body {
     font-family: nunito, sans-serif;
-    background: -o-linear-gradient(top, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%);
-    background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(63, 43, 115, 1)), to(rgba(104, 61, 214, 1)));
-    background: linear-gradient(180deg, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%);
-    background-attachment: fixed;
+    background: linear-gradient(180deg, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%) fixed;
     overflow-x: hidden;
     position: relative;
     height: 100%;
@@ -18,9 +15,6 @@ body {
 
 main {
     overflow: hidden;
-    background: -o-linear-gradient(top, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%);
-    background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(63, 43, 115, 1)), to(rgba(104, 61, 214, 1)));
-    background: linear-gradient(180deg, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%);
-    background-attachment: fixed;
+    background: linear-gradient(180deg, rgba(63, 43, 115, 1) 0%, rgba(104, 61, 214, 1) 100%) fixed;
     flex: 1 0 auto
 }
